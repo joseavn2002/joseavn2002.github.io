@@ -1,0 +1,554 @@
+<!--Trabajo de Carlos Torres León y Jose Antonio Valenzuela Núñez-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!--Título-->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Banderas Azules de Andalucía</title>
+    <link href="style.css" rel="stylesheet" />
+    <h1>BANDERAS AZULES ANDALUCÍA</h1>
+</head>
+
+<body>
+    <!-- Barra de búsqueda -->
+    <div class="barra-busqueda">
+        <input type="text" placeholder="Busque una bandera azul..." />
+    </div>
+
+    <!-- Recomendaciones -->
+    <div class="recomendaciones">
+        <div class="recomendacion">
+            <!--Recomendación 1(Playas urbanas?)-->
+            <h3 class="recomendacion-titulo">Recomendación 1(Playas Urbanas)</h3>
+            <div class="recomendacion-item">★★★★★ Playa de la Malagueta - Málaga</div>
+            <div class="recomendacion-item">★★★★★ Playa de Zahara de los Atunes - Cádiz</div>
+            <div class="recomendacion-item">★★★★★ Playa de Islantilla - Huelva</div>
+            <div class="recomendacion-item">★★★★★ Playa de Los Genoveses - Almería</div>
+            <div class="recomendacion-item">★★★★★ Playa de La Herradura - Granada</div>
+        </div>
+            <!--Recomendación 2(Playas naturales)-->
+        <div class="recomendacion">
+            <h3 class="recomendacion-titulo">Recomendación 2(Naturales)</h3>
+            <div class="recomendacion-item">★★★★★ Playa de la Malagueta - Málaga</div>
+            <div class="recomendacion-item">★★★★★ Playa de Zahara de los Atunes - Cádiz</div>
+            <div class="recomendacion-item">★★★★★ Playa de Islantilla - Huelva</div>
+            <div class="recomendacion-item">★★★★★ Playa de Los Genoveses - Almería</div>
+            <div class="recomendacion-item">★★★★★ Playa de La Herradura - Granada</div>
+        </div>
+            <!--Recomendación 3(Playas más únicas)-->
+        <div class="recomendacion">
+            <h3 class="recomendacion-titulo">Recomendación 3(Unicas)</h3>
+            <div class="recomendacion-item">★★★★★ Playa de la Malagueta - Málaga</div>
+            <div class="recomendacion-item">★★★★★ Playa de Zahara de los Atunes - Cádiz</div>
+            <div class="recomendacion-item">★★★★★ Playa de Islantilla - Huelva</div>
+            <div class="recomendacion-item">★★★★★ Playa de Los Genoveses - Almería</div>
+            <div class="recomendacion-item">★★★★★ Playa de La Herradura - Granada</div>
+        </div>
+    </div>
+
+    <h2>Provincias andaluzas</h2>
+
+        <div class="menus-centrados" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="provincia" id="Málaga" onclick="toggleDropdown('banderasMalaga', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Málaga</h3>
+                <!-- Málaga -->
+        <div class="banderasProvincia" id="banderasMalaga">
+            <!--Playa de la Malagueta-->
+            <section>
+                <h4 onclick="toggleDropdown('Malagueta_Malaga', event)">Playa de la Malagueta</h4>
+                <div class="banderaAzul" id="Malagueta_Malaga">
+                    <img src="./img/malaguetaMalaga.png" alt="Imagen de la Playa de la Malagueta" />
+                    <p><strong>Provincia:</strong> Málaga</p>
+                    <p><strong>Municipio:</strong> Málaga</p>
+                    <a href="https://maps.app.goo.gl/vck7E6Ca7g2sVqUT8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa muy conocida por su ambiente animado, ideal para disfrutar de la ciudad. Ofrece buena infraestructura con bares, restaurantes y zonas de juegos para niños.</p>
+                    <p><strong>Detalles:</strong> Accesibilidad para personas con movilidad reducida, duchas y servicios cercanos.</p>
+                </div>
+            </section>
+            <!--Playa de Maro-->
+            <section>
+                <h4 onclick="toggleDropdown('Maro_Malaga', event)">Playa de Maro</h4>
+                <div class="banderaAzul" id="Maro_Malaga">
+                    <img src="./img/maroMalaga.png" alt="Imagen de la Playa de Maro" />
+                    <p><strong>Provincia:</strong> Málaga</p>
+                    <p><strong>Municipio:</strong> Nerja</p>
+                    <a href="https://maps.app.goo.gl/K8Arsp5ouu6CV3Ac7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa aislada y tranquila, rodeada de acantilados. Su entorno natural la convierte en un refugio ideal para los amantes de la naturaleza.</p>
+                    <p><strong>Detalles:</strong> Zona protegida, aguas cristalinas, sin muchos servicios cercanos, ideal para quienes buscan paz y belleza natural.</p>
+                </div>
+            </section>
+            <!--Playa de Burriana-->
+            <section>
+                <h4 onclick="toggleDropdown('Burriana_Malaga', event)">Playa de Burriana</h4>
+                <div class="banderaAzul" id="Burriana_Malaga">
+                    <img src="./img/burrianaMalaga.png" alt="Imagen de la Playa de Burriana" />
+                    <p><strong>Provincia:</strong> Málaga</p>
+                    <p><strong>Municipio:</strong> Nerja</p>
+                    <a href="https://maps.app.goo.gl/BGQoTPWUaxsAbYCs7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa muy popular, con aguas tranquilas y actividades acuáticas disponibles. Además, cuenta con una amplia oferta de restaurantes y tiendas a lo largo del paseo marítimo.</p>
+                    <p><strong>Detalles:</strong> Excelente infraestructura con duchas, servicios de alquiler de equipos acuáticos y buena accesibilidad.</p>
+                </div>
+            </section>
+            <!--Playa de Cabopino-->
+            <section>
+                <h4 onclick="toggleDropdown('Cabopino_Malaga', event)">Playa de Cabopino</h4>
+                <div class="banderaAzul" id="Cabopino_Malaga">
+                    <img src="./img/cabopinoMalaga.png" alt="Imagen de la Playa de Cabopino" />
+                    <p><strong>Provincia:</strong> Málaga</p>
+                    <p><strong>Municipio:</strong> Marbella</p>
+                    <a href="https://maps.app.goo.gl/yDmnDTjsriUexiTG8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa tranquila</p>
+                    <p><strong>Descripción:</strong> Conocida por su puerto deportivo y su ambiente relajado, ideal para disfrutar de un día de sol y mar en familia.</p>
+                    <p><strong>Detalles:</strong> Accesibilidad, duchas, y un ambiente más tranquilo en comparación con otras playas más turísticas de la zona.</p>
+                </div>
+            </section>
+            <!--Playa de Carihuela-->
+            <section>
+                <h4 onclick="toggleDropdown('Carihuela_Malaga', event)">Playa de la Carihuela</h4>
+                <div class="banderaAzul" id="Carihuela_Malaga">
+                    <img alt="Imagen de la Playa de la Carihuela" src="./img/carihuelaMalaga.png" />
+                    <p><strong>Provincia:</strong> Málaga</p>
+                    <p><strong>Municipio:</strong> Torremolinos</p>
+                    <a href="https://maps.app.goo.gl/jQKnaMEcrRXFCsY5A" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Conocida por su ambiente animado, especialmente en los meses de verano. Ideal para quienes buscan variedad de servicios y actividades en la playa.</p>
+                    <p><strong>Detalles:</strong> Amplia oferta de bares y restaurantes, excelente infraestructura, y accesibilidad para todos.</p>
+                </div>
+            </section>
+
+            <!--Puerto Deportivo de Benalmádena-->    
+            <section class="playa">
+                <h4 onclick="toggleDropdown('PuertoBenalmadena_Malaga', event)">Puerto Deportivo de Benalmádena</h4>
+                <div class="banderaAzul" id="PuertoBenalmadena_Malaga">
+                    <img alt="Imagen del Puerto Deportivo de Benalmádena" src="./img/puertobenalmadenaMalaga.png" />
+                    <p><strong>Provincia:</strong> Málaga</p>
+                    <p><strong>Municipio:</strong> Benalmádena</p>
+                    <a href="https://maps.app.goo.gl/KaVsoRiKvc9x6Jo49" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Puerto deportivo</p>
+                    <p><strong>Descripción:</strong> Un moderno puerto deportivo con una amplia oferta de actividades, desde paseos en barco hasta deportes acuáticos y una gran variedad de restaurantes.</p>
+                    <p><strong>Detalles:</strong> Servicios completos para los amantes del mar y del ocio, con acceso a una gran variedad de experiencias turísticas.</p>
+                </div>
+            </section>
+        </div>
+            </div>
+            <div class="provincia" id="Cádiz" onclick="toggleDropdown('banderasCadiz', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Cádiz</h3>
+                <!-- Cádiz -->
+        <div class="banderasProvincia" id="banderasCadiz">
+            <!-- Playa de la Victoria -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Victoria_Cadiz', event)">Playa de la Victoria</h4>
+                <div class="banderaAzul" id="Victoria_Cadiz">
+                    <img alt="Imagen de la Playa de la Victoria" src="./img/victoriaCadiz.png" />
+                    <p><strong>Provincia:</strong> Cádiz</p>
+                    <p><strong>Municipio:</strong> Cádiz</p>
+                    <a href="https://maps.app.goo.gl/reKdhw1vqVNWmuBi8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa extensa y muy popular en la ciudad de Cádiz, con su fina arena dorada y aguas tranquilas. Es ideal para pasar un día completo, ofreciendo todas las comodidades y servicios que uno podría necesitar.</p>
+                    <p><strong>Detalles:</strong> Cuenta con buenas instalaciones, incluyendo duchas, chiringuitos, y una gran zona de aparcamiento. Es accesible para personas con movilidad reducida y tiene un ambiente relajado y familiar.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Zahara de los Atunes -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Zahara_de_los_Atunes_Cadiz', event)">Playa de Zahara de los Atunes</h4>
+                <div class="banderaAzul" id="Zahara_de_los_Atunes_Cadiz">
+                    <img alt="Imagen de la Playa de Zahara de los Atunes" src="./img/zaharaCadiz.png" />
+                    <p><strong>Provincia:</strong> Cádiz</p>
+                    <p><strong>Municipio:</strong> Barbate</p>
+                    <a href="https://maps.app.goo.gl/25ZaoUgWwU7qoxgm6" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa rural</p>
+                    <p><strong>Descripción:</strong> Playa de aguas cristalinas y arena fina, ubicada en la costa de Barbate, famosa por su tranquilidad y belleza natural. Es el lugar perfecto para quienes buscan un entorno más relajado y menos concurrido que otras playas cercanas.</p>
+                    <p><strong>Detalles:</strong> Aunque es una playa tranquila, cuenta con algunos servicios como chiringuitos y alquiler de hamacas. La zona es muy popular entre los aficionados al surf y la fotografía, gracias a sus paisajes impresionantes.</p>
+                </div>
+            </section>
+
+            <!-- Playa de La Caleta -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Caleta_Cadiz', event)">Playa de La Caleta</h4>
+                <div class="banderaAzul" id="Caleta_Cadiz">
+                    <img alt="Imagen de la Playa de La Caleta" src="./img/caletaCadiz.png" />
+                    <p><strong>Provincia:</strong> Cádiz</p>
+                    <p><strong>Municipio:</strong> Cádiz</p>
+                    <a href="https://maps.app.goo.gl/U4hAe2B9RZdKrixk6" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa emblemática de la ciudad de Cádiz, conocida por su belleza natural y su entorno histórico. Es una de las playas más visitadas por turistas y locales, ubicada en el casco antiguo de la ciudad, justo entre dos castillos.</p>
+                    <p><strong>Detalles:</strong> La playa ofrece un ambiente más tranquilo que otras más grandes de la zona, con instalaciones básicas, chiringuitos y una gran vista panorámica. Es perfecta para disfrutar de un día de sol en un entorno pintoresco.</p>
+                </div>
+            </section>
+
+            <!-- Playa de El Palmar -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('ElPalmar_Cadiz', event)">Playa de El Palmar</h4>
+                <div class="banderaAzul" id="ElPalmar_Cadiz">
+                    <img alt="Imagen de la Playa de El Palmar" src="./img/palmarCadiz.png" />
+                    <p><strong>Provincia:</strong> Cádiz</p>
+                    <p><strong>Municipio:</strong> Vejer de la Frontera</p>
+                    <a href="https://maps.app.goo.gl/xyrEm3UsMe4GbRgx9" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa semiurbana</p>
+                    <p><strong>Descripción:</strong> Playa natural con un paisaje espectacular, ubicada en el municipio de Vejer de la Frontera. La Playa de El Palmar es conocida por sus aguas limpias y su ambiente relajado, ideal para los amantes del surf y del turismo más tranquilo.</p>
+                    <p><strong>Detalles:</strong> Aunque está más aislada que las playas urbanas, ofrece servicios básicos como duchas, chiringuitos, y vigilancia. Es una playa accesible y perfecta para aquellos que buscan una experiencia más natural y menos concurrida.</p>
+                </div>
+            </section>
+
+            <!-- Playa de los Lances -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Lances_Cadiz', event)">Playa de los Lances</h4>
+                <div class="banderaAzul" id="Lances_Cadiz">
+                    <img alt="Imagen de la Playa de los Lances" src="./img/lancesCadiz.png" />
+                    <p><strong>Provincia:</strong> Cádiz</p>
+                    <p><strong>Municipio:</strong> Tarifa</p>
+                    <a href="https://maps.app.goo.gl/WEbsbsWwq2Pxp2C66" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa de arena fina y aguas cristalinas, famosa por ser uno de los destinos preferidos por los amantes de los deportes acuáticos como el windsurf y el kitesurf. Se encuentra en la ciudad de Tarifa, conocida por su viento constante y paisajes únicos.</p>
+                    <p><strong>Detalles:</strong> Con una gran longitud, la playa está bien equipada con servicios como duchas, chiringuitos y vigilancia. Es un lugar ideal para disfrutar de la naturaleza y practicar deportes acuáticos, además de ofrecer un ambiente relajado y atractivo.</p>
+                </div>
+            </section>
+            <!-- Playa de Bolonia -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Bolonia_Cadiz', event)">Playa de Bolonia</h4>
+                <div class="banderaAzul" id="Bolonia_Cadiz">
+                    <img alt="Imagen de la Playa de Bolonia" src="./img/boloniaCadiz.png" />
+                    <p><strong>Provincia:</strong> Cádiz</p>
+                    <p><strong>Municipio:</strong> Tarifa</p>
+                    <a href="https://maps.app.goo.gl/eJT3tco4VsB7bSaZ8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa de gran belleza y tranquilidad, famosa por su arena blanca y fina, así como por las impresionantes ruinas romanas de Baelo Claudia, que se encuentran cerca de la playa. Es un lugar perfecto para quienes buscan disfrutar de la naturaleza en su estado más puro.</p>
+                    <p><strong>Detalles:</strong> Aunque no está tan urbanizada como otras playas, la playa de Bolonia ofrece buenos servicios, incluyendo vigilancia y acceso a restaurantes cercanos. Es un lugar ideal para disfrutar de un día relajado y explorar la historia local.</p>
+                </div>
+            </section>
+        </div>
+            </div>
+            <div class="provincia" id="Huelva" onclick="toggleDropdown('banderasHuelva', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Huelva</h3>
+                <!-- Huelva -->
+        <div class="banderasProvincia" id="banderasHuelva">
+            <!-- Playa de Islantilla -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Islantilla_Huelva', event)">Islantilla</h4>
+                <div class="banderaAzul" id="Islantilla_Huelva">
+                    <img alt="Imagen de la Playa de Islantilla" src="./img/islantillaHuelva.png" />
+                    <p><strong>Provincia:</strong> Huelva</p>
+                    <p><strong>Municipio:</strong> Isla Cristina</p>
+                    <a href="https://maps.app.goo.gl/4jP7GiwxvLePMYBh7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa amplia y bien equipada, conocida por su gran extensión y aguas tranquilas. Es una de las playas más populares de la zona y un destino ideal para familias y turistas que buscan comodidad y belleza.</p>
+                    <p><strong>Detalles:</strong> Cuenta con todos los servicios necesarios, incluyendo duchas, chiringuitos, y una zona amplia de aparcamiento. Además, es accesible para personas con movilidad reducida y tiene una gran oferta de actividades acuáticas.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Santa Pura -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('santa_pura', event)">Santa Pura</h4>
+                <div class="banderaAzul" id="santa_pura">
+                    <img alt="Imagen de la Playa de Santa Pura" src="./img/santapuraHuelva.png" />
+                    <p><strong>Provincia:</strong> Huelva</p>
+                    <p><strong>Municipio:</strong> Lepe</p>
+                    <a href="https://maps.app.goo.gl/vKMeA5Qdfg3HURpi7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa tranquila</p>
+                    <p><strong>Descripción:</strong> Playa serena de arena dorada y aguas claras, rodeada de dunas naturales y vegetación autóctona. Un lugar perfecto para aquellos que buscan paz y tranquilidad en un entorno natural.</p>
+                    <p><strong>Detalles:</strong> Aunque la playa es más tranquila, ofrece servicios básicos como duchas y vigilancia. Es una opción ideal para quienes prefieren disfrutar de la naturaleza y el ambiente relajado sin la aglomeración de turistas.</p>
+                </div>
+            </section>
+
+            <!-- Playa de La Antilla -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('LaAntilla_Huelva', event)">La Antilla</h4>
+                <div class="banderaAzul" id="LaAntilla_Huelva">
+                    <img alt="Imagen de la Playa de La Antilla" src="./img/antillaHuelva.png" />
+                    <p><strong>Provincia:</strong> Huelva</p>
+                    <p><strong>Municipio:</strong> Lepe</p>
+                    <a href="https://maps.app.goo.gl/8FCM4H4FKwsowVfj6" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa con aguas calmadas y una gran extensión, ideal para disfrutar de un día de sol con familiares o amigos. Su ambiente relajado la convierte en un lugar perfecto para quienes buscan comodidad en la costa.</p>
+                    <p><strong>Detalles:</strong> Ofrece todo tipo de servicios, incluyendo duchas, chiringuitos, zonas de aparcamiento, y vigilancia. Además, es muy accesible, lo que la hace ideal para personas con movilidad reducida.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Matalascañas -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Matalascas_Huelva', event)">Matalascañas</h4>
+                <div class="banderaAzul" id="Matalascas_Huelva">
+                    <img alt="Imagen de la Playa de Matalascañas" src="./img/matalascañasHuelva.png" />
+                    <p><strong>Provincia:</strong> Huelva</p>
+                    <p><strong>Municipio:</strong> Almonte</p>
+                    <a href="https://maps.app.goo.gl/wRf7DqvYPTg3xd9j6" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa de gran tamaño y muy popular, conocida por su fácil acceso y por ser el punto de partida para visitar el Parque Nacional de Doñana. La playa ofrece una combinación de naturaleza y comodidades urbanas.</p>
+                    <p><strong>Detalles:</strong> Servicios como duchas, aparcamiento, chiringuitos y vigilancia están disponibles para todos los visitantes. Ideal para disfrutar de largos paseos y del contacto con la naturaleza circundante.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Punta Umbría -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('PuntaUmbria_Huelva', event)">Punta Umbría</h4>
+                <div class="banderaAzul" id="PuntaUmbria_Huelva">
+                    <img alt="Imagen de la Playa de Punta Umbría" src="./img/puntaumbriaHuelva.png" />
+                    <p><strong>Provincia:</strong> Huelva</p>
+                    <p><strong>Municipio:</strong> Punta Umbría</p>
+                    <a href="https://maps.app.goo.gl/ggJA4oXJKmmLiyyu9" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa muy conocida por su gran oferta de servicios y su excelente ubicación. Es ideal para turistas que buscan una playa urbana pero tranquila, con aguas limpias y entorno natural cercano.</p>
+                    <p><strong>Detalles:</strong> La playa cuenta con un amplio abanico de servicios, desde zonas de recreo hasta instalaciones deportivas, con un ambiente tranquilo para el disfrute de toda la familia.</p>
+                </div>
+            </section>
+
+            <!-- Playa de El Portil -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('ElPortil_Huelva', event)">El Portil</h4>
+                <div class="banderaAzul" id="ElPortil_Huelva">
+                    <img alt="Imagen de la Playa de El Portil" src="./img/elportilHuelva.png" />
+                    <p><strong>Provincia:</strong> Huelva</p>
+                    <p><strong>Municipio:</strong> Cartaya</p>
+                    <a href="https://maps.app.goo.gl/sHyUNFvvPEa4xWAp8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa tranquila y menos urbanizada, ideal para quienes buscan un lugar más relajado para disfrutar del mar. Con aguas claras y un entorno natural, El Portil es perfecto para paseos a lo largo de su costa.</p>
+                    <p><strong>Detalles:</strong> Dispone de los servicios básicos como duchas y vigilancia, pero mantiene un ambiente mucho más relajado y natural que otras playas más urbanizadas de la zona.</p>
+                </div>
+            </section>
+        </div>
+            </div>
+            <div class="provincia" id="Almería" onclick="toggleDropdown('banderasAlmeria', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Almería</h3>
+                 <!-- Almería -->
+        <div class="banderasProvincia" id="banderasAlmeria">
+            <!-- Playa de Los Genoveses -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('LosGenoveses_Almeria', event)">Los Genoveses</h4>
+                <div class="banderaAzul" id="LosGenoveses_Almeria">
+                    <img alt="Imagen de la Playa de Los Genoveses" src="./img/genovesesAlmeria.png" />
+                    <p><strong>Provincia:</strong> Almería</p>
+                    <p><strong>Municipio:</strong> Níjar</p>
+                    <a href="https://maps.app.goo.gl/jPxCFPnDA8kbbgHm7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa de gran belleza natural, ubicada en el Parque Natural de Cabo de Gata-Níjar. Con aguas cristalinas y rodeada de montañas, es un lugar tranquilo ideal para desconectar y disfrutar de la naturaleza.</p>
+                    <p><strong>Detalles:</strong> La playa es de fácil acceso y dispone de servicios básicos como duchas y vigilancia. Es un lugar perfecto para el baño y para aquellos que buscan relajarse en un entorno virgen.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Mónsul -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Monsul_Almeria', event)">Mónsul</h4>
+                <div class="banderaAzul" id="Monsul_Almeria">
+                    <img alt="Imagen de la Playa de Mónsul" src="./img/monsulAlmeria.png" />
+                    <p><strong>Provincia:</strong> Almería</p>
+                    <p><strong>Municipio:</strong> Níjar</p>
+                    <a href="https://maps.app.goo.gl/oTwDJuQ4dVCbakuH8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa famosa por su impresionante paisaje, con una gran duna y aguas cristalinas. Es uno de los destinos más populares dentro del Parque Natural de Cabo de Gata.</p>
+                    <p><strong>Detalles:</strong> Además de su belleza natural, la playa ofrece servicios básicos y un acceso fácil. Es ideal para quienes buscan una experiencia tranquila y pintoresca en un lugar menos concurrido.</p>
+                </div>
+            </section>
+
+            <!-- Playa de las Salinas -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Salinas_Almeria', event)">Las Salinas</h4>
+                <div class="banderaAzul" id="Salinas_Almeria">
+                    <img alt="Imagen de la Playa de las Salinas" src="./img/salinasAlmeria.png" />
+                    <p><strong>Provincia:</strong> Almería</p>
+                    <p><strong>Municipio:</strong> El Ejido</p>
+                    <a href="https://maps.app.goo.gl/o2kk2UgsF29aj22i9" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa de aguas transparentes, famosa por su paisaje natural y sus dunas. Está ubicada cerca de la zona de las salinas y ofrece un entorno tranquilo para disfrutar del mar y la naturaleza.</p>
+                    <p><strong>Detalles:</strong> Con buena accesibilidad, la playa dispone de servicios básicos como duchas y vigilancia. Ideal para relajarse y disfrutar de la paz del entorno natural.</p>
+                </div>
+            </section>
+
+            <!-- Playa de El Toyo -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('ElToyo_Almeria', event)">El Toyo</h4>
+                <div class="banderaAzul" id="ElToyo_Almeria">
+                    <img alt="Imagen de la Playa de El Toyo" src="./img/eltoyoAlmeria.png" />
+                    <p><strong>Provincia:</strong> Almería</p>
+                    <p><strong>Municipio:</strong> Almería</p>
+                    <a href="https://maps.app.goo.gl/RGq67K8cnpj95kkQ7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa ubicada en la capital de Almería, con un ambiente relajado y familiar. Es una de las playas urbanas más visitadas, ideal para quienes buscan comodidad y belleza cerca de la ciudad.</p>
+                    <p><strong>Detalles:</strong> Ofrece una gran variedad de servicios como duchas, chiringuitos y vigilancia, además de una buena zona de aparcamiento. Es perfecta para pasar el día en familia o disfrutar de una tarde soleada.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Aguadulce -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Aguadulce_Almeria', event)">Aguadulce</h4>
+                <div class="banderaAzul" id="Aguadulce_Almeria">
+                    <img alt="Imagen de la Playa de Aguadulce" src="./img/aguadulceAlmeria.png" />
+                    <p><strong>Provincia:</strong> Almería</p>
+                    <p><strong>Municipio:</strong> Roquetas de Mar</p>
+                    <a href="https://maps.app.goo.gl/4BNXoEit9fLaAb1i6" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa muy popular en la zona de Roquetas de Mar, conocida por su excelente infraestructura y su ambiente animado. Es un lugar perfecto para disfrutar de todos los servicios urbanos en un entorno costero.</p>
+                    <p><strong>Detalles:</strong> La playa dispone de múltiples servicios, incluyendo duchas, chiringuitos, y zonas de recreo. Es ideal para familias y turistas que buscan una playa accesible y bien equipada.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Las Negras -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('LasNegras_Almeria', event)">Las Negras</h4>
+                <div class="banderaAzul" id="LasNegras_Almeria">
+                    <img alt="Imagen de la Playa de Las Negras" src="./img/lasnegrasAlmeria.png" />
+                    <p><strong>Provincia:</strong> Almería</p>
+                    <p><strong>Municipio:</strong> Níjar</p>
+                    <a href="https://maps.app.goo.gl/8h1ptsR455jiSkJ7A" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa en un entorno espectacular, rodeada de montañas y acantilados. Es conocida por su belleza natural y la calma que ofrece a sus visitantes.</p>
+                    <p><strong>Detalles:</strong> Con servicios básicos y un acceso fácil, es perfecta para disfrutar de un ambiente tranquilo y natural. Además, cuenta con una gran zona de aparcamiento y vigilancia.</p>
+                </div>
+            </section>
+        </div>
+            </div>
+            <div class="provincia" id="Granada" onclick="toggleDropdown('banderasGranada', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Granada</h3>
+                <!-- Granada -->
+        <div class="banderasProvincia" id="banderasGranada">
+            <!-- Playa de la Herradura -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Herradura_Granada', event)">La Herradura</h4>
+                <div class="banderaAzul" id="Herradura_Granada">
+                    <img alt="Imagen de la Playa de La Herradura" src="./img/herraduraGranada.png" />
+                    <p><strong>Provincia:</strong> Granada</p>
+                    <p><strong>Municipio:</strong> Almuñécar</p>
+                    <a href="https://maps.app.goo.gl/jZDYEkV1sti4TxKv7" target="_blank"><strong>Localización</strong></a>                    
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa de arena fina y aguas tranquilas, ubicada en la costa tropical de Granada. Es una de las playas más conocidas de la zona, perfecta para disfrutar del sol y el mar en un ambiente relajado.</p>
+                    <p><strong>Detalles:</strong> La playa cuenta con múltiples servicios, incluyendo duchas, chiringuitos y zonas de aparcamiento. Es ideal para familias y para quienes buscan comodidad junto al mar.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Almuñécar -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Almunecar_Granada', event)">Playa de Almuñécar</h4>
+                <div class="banderaAzul" id="Almunecar_Granada">
+                    <img alt="Imagen de la Playa de Almuñécar" src="./img/almuñecarGranada.png" />
+                    <p><strong>Provincia:</strong> Granada</p>
+                    <p><strong>Municipio:</strong> Almuñécar</p>
+                    <a href="https://maps.app.goo.gl/yFk3M5RBBhV32MRg7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa urbana y familiar, famosa por su fina arena y aguas transparentes. Se encuentra en el municipio de Almuñécar y es un destino popular tanto para turistas como para locales.</p>
+                    <p><strong>Detalles:</strong> Ofrece todos los servicios que uno necesita, como duchas, vigilancia, y fácil acceso. Ideal para pasar el día en la playa y disfrutar de actividades acuáticas.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Salobreña -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Salobrena_Granada', event)">Salobreña</h4>
+                <div class="banderaAzul" id="Salobrena_Granada">
+                    <img alt="Imagen de la Playa de Salobreña" src="./img/salobreñaGranada.png" />
+                    <p><strong>Provincia:</strong> Granada</p>
+                    <p><strong>Municipio:</strong> Salobreña</p>
+                    <a href="https://maps.app.goo.gl/1FUQizEhgTvi57y1A" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa urbana</p>
+                    <p><strong>Descripción:</strong> Playa situada en el municipio de Salobreña, conocida por su excelente clima, aguas tranquilas y entorno pintoresco. Es una playa que combina la belleza natural con la comodidad de estar cerca de la localidad.</p>
+                    <p><strong>Detalles:</strong> Además de sus vistas y ambiente relajado, la playa cuenta con servicios básicos como duchas, chiringuitos y vigilancia. Es perfecta para pasar un día en familia.</p>
+                </div>
+            </section>
+
+            <!-- Playa de La Rijana -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Rijana_Granada', event)">La Rijana</h4>
+                <div class="banderaAzul" id="Rijana_Granada">
+                    <img alt="Imagen de la Playa de La Rijana" src="./img/rijanaGranada.png" />
+                    <p><strong>Provincia:</strong> Granada</p>
+                    <p><strong>Municipio:</strong> Gualchos</p>
+                    <a href="https://maps.app.goo.gl/Y33YMXqcCLnX55b49" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa tranquila y poco masificada, ideal para quienes buscan un lugar más natural. Está ubicada en la costa de Granada, en un entorno rodeado de montañas y vegetación.</p>
+                    <p><strong>Detalles:</strong> Aunque no tiene una gran infraestructura, la playa dispone de los servicios básicos necesarios, como duchas y vigilancia. Es perfecta para los amantes de la naturaleza y el turismo más relajado.</p>
+                </div>
+            </section>
+
+            <!-- Playa de Cantarriján -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Cantarrijan_Granada', event)">Cantarriján</h4>
+                <div class="banderaAzul" id="Cantarrijan_Granada">
+                    <img alt="Imagen de la Playa de Cantarriján" src="./img/cantarrijanGranada.png" />
+                    <p><strong>Provincia:</strong> Granada</p>
+                    <p><strong>Municipio:</strong> Almuñécar</p>
+                    <a href="https://maps.app.goo.gl/hAQ3wfxJiUdpxPoK8" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa natural</p>
+                    <p><strong>Descripción:</strong> Playa de gran belleza natural, enmarcada en un entorno de montañas y aguas cristalinas. Es una playa más aislada y tranquila, perfecta para desconectar del bullicio.</p>
+                    <p><strong>Detalles:</strong> Dispone de los servicios básicos y una excelente zona de aparcamiento. Es muy visitada por aquellos que buscan tranquilidad en un paisaje espectacular.</p>
+                </div>
+            </section>
+
+            <!-- Playa de El Tesorillo -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Tesorillo_Granada', event)">El Tesorillo</h4>
+                <div class="banderaAzul" id="Tesorillo_Granada">
+                    <img alt="Imagen de la Playa de El Tesorillo" src="./img/tesorilloGranada.png" />
+                    <p><strong>Provincia:</strong> Granada</p>
+                    <p><strong>Municipio:</strong> Almuñécar</p>
+                    <a href="https://maps.app.goo.gl/ttBMX6tbtHmdt6Fn9" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa semiurbana</p>
+                    <p><strong>Descripción:</strong> Playa de arena dorada, más tranquila que otras playas urbanas de la zona. Se encuentra en un entorno natural, ideal para quienes buscan un poco de paz y desconexión cerca de la ciudad.</p>
+                    <p><strong>Detalles:</strong> La playa cuenta con los servicios básicos como duchas, vigilancia y chiringuitos. Es muy popular entre los locales por su ambiente relajado y su belleza natural.</p>
+                </div>
+            </section>
+        </div>
+            </div>
+            <div class="provincia" id="Jaén" onclick="toggleDropdown('banderasJaen', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Jaén</h3>
+                <!-- Jaén -->
+        <div class="banderasProvincia" id="banderasJaen">
+            <!-- Embalse del Tranco -->
+            <section class="playa">
+                <h4 onclick="toggleDropdown('Tranco_Jaen', event)">Playa del Tranco</h4>
+                <div class="banderaAzul" id="Tranco_Jaen">
+                    <img alt="Imagen de la Playa del Tranco" src="./img/trancoJaen.png" />
+                    <p><strong>Provincia:</strong> Jaén</p>
+                    <p><strong>Municipio:</strong> La Iruela</p>
+                    <a href="https://maps.app.goo.gl/54Nmi6NqbNPAUyEf7" target="_blank"><strong>Localización</strong></a>
+                    <p><strong>Categoría:</strong> Playa de embalse</p>
+                    <p><strong>Descripción:</strong> Playa ubicada en el embalse del Tranco, en un entorno natural rodeado por montañas. Es una playa tranquila y poco masificada, ideal para quienes buscan paz y contacto con la naturaleza.</p>
+                    <p><strong>Detalles:</strong> Ofrece servicios básicos como duchas y vigilancia. Es perfecta para quienes disfrutan de actividades acuáticas como el piragüismo o el paddle surf.</p>
+                </div>
+            </section>
+        </div>
+            </div>
+            <div class="provincia" id="Córdoba" onclick="toggleDropdown('banderasCordoba', event)" style="width: 100%; text-align: center; cursor: pointer; margin-bottom: 10px;">
+                <h3>Córdoba</h3>
+                <!-- Córdoba -->
+                    <div class="banderasProvincia" id="banderasCordoba">
+                        <!-- Embalse de la Breña -->
+                        <section class="playa">
+                            <h4 onclick="toggleDropdown('Brena_Cordoba', event)">Embalse de la Breña</h4>
+                            <div class="banderaAzul" id="Brena_Cordoba">
+                                <img alt="Imagen del Embalse de la Breña" src="./img/embalsebreñaCordoba.png" />
+                                <p><strong>Provincia:</strong> Córdoba</p>
+                                <p><strong>Municipio:</strong> Zujaira</p>
+                                <a href="https://maps.app.goo.gl/m7hGdKqsLKyP3sSM7" target="_blank"><strong>Localización</strong></a>
+                                <p><strong>Categoría:</strong> Playa de embalse</p>
+                                <p><strong>Descripción:</strong> Playa de agua dulce situada en el embalse de la Breña. Es un lugar ideal para relajarse, practicar deportes acuáticos y disfrutar de un paisaje impresionante.</p>
+                                <p><strong>Detalles:</strong> Cuenta con servicios como duchas y vigilancia, siendo muy popular para aquellos que buscan un espacio tranquilo y natural para disfrutar del sol y el agua.</p>
+                            </div>
+                        </section>
+                    </div>
+        </div>
+            </div>
+        <script>
+            function toggleDropdown(id, event) {
+                if (event) {
+                    event.stopPropagation(); // Detiene la propagación del evento hacia elementos padres
+                }
+
+                const content = document.getElementById(id);
+                content.style.display = content.style.display === "none" ? "block" : "none";
+            }
+        </script>
+        <script src="script.js"></script>
+    </body>
+<footer>
+<p>Página creada por: José Antonio Valenzuela Núñez y Carlos Torres León</p>
+<address>
+<p>Dirección: Calle Falsa 123, Ciudad</p>
+<p>Teléfono: +1 (555) 123-4567</p>
+<p>Email: contacto@miempresa.com</p>
+</address>
+</footer>
+</html>

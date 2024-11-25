@@ -1,0 +1,151 @@
+/* Estilo global */
+* {
+    background-color: #004173;
+}
+
+/* Estilos de las cabeceras 'h1' y 'h2' */
+h1, h2 {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #2462A1; /* Color de fondo azul oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(#2462A1, #4B92D6); /* Degradado de azul oscuro a azul claro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* Estilo de las cabeceras 'h3' */
+h3 {
+    font-size: 18px; /* Tamaño de fuente */
+    text-align: center;
+    color: black;
+    background-color: #2462A1; /* Color de fondo azul oscuro */
+    padding: 10px 0; /* Espacio arriba y abajo, sin espacio extra a los lados,ampliar si es necesario */
+    border-radius: 8px;
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    background: linear-gradient(#2462A1, #4B92D6); /* Degradado de azul oscuro a azul claro */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    text-align: center;
+    margin: 40px 0; /* Aumentado para darle más espacio con el título y recomendaciones */
+}
+
+.barra-busqueda input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #2462A1;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Recomendaciones */
+.recomendaciones {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 10px;
+}
+
+.recomendacion {
+    background-color: #0066A4; /* Tonalidad más clara */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center; /*Si no se centra a lo mejor probar !important */
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.recomendacion-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Margen para el final */
+    text-align: center;
+    color: white; /* Mismo color que el texto de la recomendación */
+}
+
+.recomendacion * {
+    background-color: transparent !important; /* Quitar cualquier color de fondo más oscuro, pongo important porque si no, no hay manera */
+}
+
+.recomendacion h3 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Espacio debajo del título para separar de las recomendaciones */
+}
+
+/* Estilo para los botones desplegables (provincias) Se necesita trabajar más con ellos*/
+.provincia {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #2462A1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.provincia:hover {
+    background-color: #4B92D6;
+}
+
+.provincia:focus {
+    outline: none;
+    background-color: #4B92D6;
+}
+
+.provincia.active {
+    background-color: #004173;
+}
+
+/* Estilo para el contenedor desplegable de provincias (acordeón) */
+.banderasProvincia {
+    position: relative;
+    display: none; /* Oculto inicialmente */
+    width: 80%; /* Ampliado para asegurar que el contenido esté centrado */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mostrar el contenido del acordeón cuando la provincia está activa */
+.provincia.active + .banderasProvincia { /*La suma no representa suma si no relación, no lo toqueís*/
+    display: block;
+}
+
+/* Estilo para las banderas azules */
+.banderaAzul {
+    display: none; /* Oculto inicialmente */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Mostrar cuando esté activa */
+.banderaAzul.active {
+    display: block;
+}
+
+/* Estilo para las imágenes dentro de las banderas azules */
+.banderasProvincia img {
+    height: 400px;
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+
